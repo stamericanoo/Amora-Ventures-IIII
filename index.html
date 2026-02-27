@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amora Ventures | Sulfuric Acid Plant</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content fade-up">
+        <h1>AMORA VENTURES</h1>
+        <h2>Sulfuric Acid Plant Design</h2>
+        <p>1000 TPD Industrial Scale — Complete Technical & Economic Feasibility Study</p>
+        <a href="#overview" class="btn-primary">Explore Project ↓</a>
+    </div>
+</section>
+
+<!-- OVERVIEW -->
+<section id="overview" class="section light fade-up">
+    <div class="container two-col">
+        <div>
+            <h2>Executive Summary</h2>
+            <p>
+            This project presents a comprehensive industrial design of a 1000 ton per day 
+            sulfuric acid plant using the Contact Process with 98% overall efficiency. 
+            The study includes detailed process engineering, capital investment estimation, 
+            operational cost analysis, and long-term financial feasibility evaluation.
+            </p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <h3>Capacity</h3>
+                <p>1000 ton/day</p>
+            </div>
+            <div class="stat-box">
+                <h3>Annual Production</h3>
+                <p>330,000 ton/year</p>
+            </div>
+            <div class="stat-box">
+                <h3>Total Capital Investment</h3>
+                <p>Rp 1.127 Trillion</p>
+            </div>
+            <div class="stat-box">
+                <h3>Net Profit</h3>
+                <p>Rp 94.5 Billion/year</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS FLOW -->
+<section class="section dark fade-up">
+    <div class="container">
+        <h2>Process Flow Overview</h2>
+
+        <div class="flow">
+            <div class="flow-step">Sulfur Burning</div>
+            <div class="flow-line"></div>
+            <div class="flow-step">Gas Cleaning</div>
+            <div class="flow-line"></div>
+            <div class="flow-step">Catalytic Converter</div>
+            <div class="flow-line"></div>
+            <div class="flow-step">Absorption</div>
+            <div class="flow-line"></div>
+            <div class="flow-step">Dilution</div>
+        </div>
+
+        <p class="process-desc">
+        Sulfur is combusted at 900–1100°C producing SO₂ gas. The gas is cooled and dried 
+        before entering a multi-bed catalytic converter containing V₂O₅ catalyst where 
+        SO₂ is oxidized to SO₃. The SO₃ is absorbed in concentrated sulfuric acid 
+        forming oleum, which is subsequently diluted to obtain commercial H₂SO₄.
+        </p>
+    </div>
+</section>
+
+<!-- TECHNICAL DETAIL -->
+<section class="section light fade-up">
+    <div class="container">
+        <h2>Technical Engineering Details</h2>
+
+        <div class="tech-grid">
+            <div>
+                <h3>Sulfur Burning Furnace</h3>
+                <p>
+                Highly exothermic reaction: S + O₂ → SO₂.
+                Operates at 900–1100°C under slight positive pressure.
+                Moisture presence may cause downstream acid mist formation.
+                </p>
+            </div>
+
+            <div>
+                <h3>Catalytic Converter</h3>
+                <p>
+                Reversible exothermic reaction: 2SO₂ + O₂ ⇌ 2SO₃.
+                Operates at 420–450°C using vanadium(V) oxide catalyst.
+                Catalyst inventory: 120 tons, replaced every 3–4 years.
+                </p>
+            </div>
+
+            <div>
+                <h3>Absorption Tower</h3>
+                <p>
+                SO₃ absorbed in concentrated H₂SO₄ forming oleum.
+                Direct water absorption avoided due to acid mist formation.
+                </p>
+            </div>
+
+            <div>
+                <h3>Dilution Section</h3>
+                <p>
+                Strongly exothermic hydration reaction.
+                Cooling required to prevent overheating and aerosol formation.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FINANCIAL -->
+<section class="section dark fade-up">
+    <div class="container">
+        <h2>Economic Feasibility</h2>
+
+        <div class="financial-grid">
+            <div>
+                <h3>Revenue</h3>
+                <p>Rp 660 Billion/year</p>
+            </div>
+            <div>
+                <h3>Total Production Cost</h3>
+                <p>Rp 538.8 Billion/year</p>
+            </div>
+            <div>
+                <h3>Payback Period</h3>
+                <p>10.3 Years</p>
+            </div>
+            <div>
+                <h3>Break Even Point</h3>
+                <p>56% Capacity</p>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="bepChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="cashChart"></canvas>
+        </div>
+    </div>
+</section>
+
+<footer>
+© 2026 Amora Ventures — Sulfuric Acid Plant Feasibility Study
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
